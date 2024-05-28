@@ -1,9 +1,12 @@
 # Django project deployment(Use for all future Django projects)
 Download Heroku first through the installer(https://cli-assets.heroku.com/channels/stable/heroku-x64.exe) for the heroku Command Line interface
 - create django project through pycharm and Create Procfile and add (web: gunicorn pages_project.wsgi --log-file -) to the file.
+### manage.py startapp posts 
+- (this will automatically add 'posts.apps.PostConfig' in the settings.py file in the INSTALLED_APPS variable.
 - Work on project and once finished follow below steps..
 ### pip install pipenv
 ### pipenv install django
+### pipenv shell
 ### pipenv install gunicorn
 - To generate appropriate Pipfile.lock. Generally pycharm does this automatically enter the code below:
 ### pipenv lock 
